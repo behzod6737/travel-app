@@ -1,9 +1,47 @@
-import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
+	 
+	// FOOTER SECTION
+	   const FOOTER_LINKS = [
+		{
+		  title: 'Learn More',
+		  links: [
+			'About Hilink',
+			'Press Releases',
+			'Environment',
+			'Jobs',
+			'Privacy Policy',
+			'Contact Us',
+		  ],
+		},
+		{
+		  title: 'Our Community',
+		  links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+		},
+	  ];
+	    
+	   const SOCIALS = {
+		title: 'Social',
+		links: [
+		  '/facebook.svg',
+		  '/instagram.svg',
+		  '/twitter.svg',
+		  '/youtube.svg',
+		  '/wordpress.svg',
+		],
+	  };
+
+	 const FOOTER_CONTACT_INFO = {
+		title: 'Contact Us',
+		links: [
+		  { label: 'Admin Officer', value: '123-456-7890' },
+		  { label: 'Email Officer', value: 'hilink@akinthil.com' },
+		],
+	  };
+
   return (
     <footer className="flexCenter mb-24">
       <div className="padding-container max-container flex w-full flex-col gap-14">

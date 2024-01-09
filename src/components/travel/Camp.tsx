@@ -1,4 +1,3 @@
-import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
 
 interface CampProps {
@@ -9,6 +8,15 @@ interface CampProps {
 }
 
 const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps) => {
+	
+  // CAMP SECTION
+   const PEOPLE_URL = [
+	'/person-1.png',
+	'/person-2.png',
+	'/person-3.png',
+	'/person-4.png',
+  ];
+
   return (
     <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">

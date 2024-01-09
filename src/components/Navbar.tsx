@@ -1,12 +1,21 @@
 import Image from "next/image"
 import Link from "next/link"
-import { NAV_LINKS } from "@/constants";
 import Button from "./common/Button";
 import { useState } from "react";
 
 
 
 const Navbar = () => {
+	// NAVIGATION
+ const NAV_LINKS = [
+	{ href: '/', key: 'home', label: 'Home' },
+	{ href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
+	{ href: '/', key: 'services', label: 'Services' },
+	{ href: '/', key: 'pricing ', label: 'Pricing ' },
+	{ href: '/', key: 'contact_us', label: 'Contact Us' },
+  ];
+  
+
 	const [hamburger, setHamburger] = useState(false);
 
 	const hamburgerMenu = () => {
